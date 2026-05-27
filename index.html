@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesom-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/44/44386.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Portflio</title>
+</head>
+<body class="h-[200vh]">
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-[#F6E7C1] flex justify-between items-center py-4 px-8 shadow-md z-50">
+        <div class="font-serif font-bold text-xl hover:text-yellow-800 transition">Lanh Davin</div>
+
+        <!-- Navigation Links -->
+        <nav class="flex gap-8 font-serif font-bold text-sm">
+            <a href="#work" class="text-[#1E2A3A] hover:text-yellow-600 hover:underline transition cursor-pointer">Work</a>
+            <a href="#skills" class="text-[#1E2A3A] hover:text-yellow-600 hover:underline transition cursor-pointer">Skills</a>
+            <a href="#contact" class="text-[#1E2A3A] hover:text-yellow-600 hover:underline transition cursor-pointer">Contact</a>
+        </nav>
+
+        <!-- Hire Button -->
+        <div>
+            <a href="#contact">
+                <button class="bg-yellow-300 px-3 py-2 font-serif font-bold text-sm cursor-pointer hover:scale-110 transition-all focus:ring-1 rounded-full">
+                    Hire Me
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+
+    <!-- Hero Section -->
+        <section class="h-screen flex flex-col justify-center items-center gap-4 text-center">
+            <h1 class="font-serif font-bold">
+                <span class="text-gray-600 text-3xl block">Build Your Future with</span>
+                <span class="text-yellow-400 text-5xl block mt-2">Web Development</span>
+            </h1>
+
+    <!-- Buttons -->
+            <div class="flex gap-2 mt-4">
+                <a href="#work">
+                    <button class="bg-yellow-300 px-3 py-2 font-serif font-bold text-sm cursor-pointer hover:scale-110 transition-all focus:ring-1 rounded-full">
+                        View My Work
+                    </button>
+                </a>
+                <a href="#contact">
+                    <button class="border border-gray-900 text-gray-900 rounded-full px-5 py-2 font-serif font-bold text-sm cursor-pointer hover:bg-gray-900 hover:text-white hover:scale-105 transition-all">
+                        Let's Connect
+                    </button>
+                </a>
+                
+            </div>
+        </section>
+
+    <!-- Work Section -->
+        <section id="work" class="ml-10 mt-30">
+            <div class="flex flex-col mb-6">
+                <h2 class="text-4xl font-bold text-gray-900 mt-2">
+                    My Work </h2>
+                    <p class="text-gray-500 text-sm mt-30">
+                        A collection of projects showcasing my experience in modern web development.</p>
+                </div>
+            </div>
+<!-- Cards Container -->
+            <div class="flex flex-wrap justify-center gap-10">
+
+        <!-- Work Card 1-->
+                <div class="bg-yellow-200 rounded-xl shadow-lg overflow-hidden w-80 mb-10">
+
+                    <img src="https://www.nicepng.com/png/detail/138-1380253_work-in-progress-icon-png-person-computer-icon.png"
+                        alt="work"
+                        class="h-48 w-full object-cover transition duration-300 hover:scale-105">
+
+                    <h2 class="text-xl font-bold mt-2 ml-3">My Portfolio</h2>
+
+                    <p class="text-gray-500 mt-2 ml-3 text-sm">
+                        Modern portfolio featuring admin UI, charts, and analytics dashboards.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="mt-4 flex gap-2 ml-3 mb-3">
+
+                        <a href="https://github.com/Davin-ldn"
+                        target="_blank"
+                        class="bg-gray-900 text-white px-2 py-1 text-xs rounded-md hover:bg-gray-600 hover:scale-110 transition-all">
+                            GitHub
+                        </a>
+
+                        <a href="https://github.com/Davin-ldn/Davin-Portfolio2"
+                        target="_blank"
+                        class="bg-yellow-500 text-white px-2 py-1 text-xs rounded-md hover:bg-yellow-600 hover:scale-110 transition-all">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+    <!-- Card Work 2-->
+                <div class="bg-yellow-200 rounded-xl shadow-lg overflow-hidden  w-80 mb-10 ml-10">
+                    <img src="https://t4.ftcdn.net/jpg/18/66/82/87/360_F_1866828741_78cv8Aoa1ZYOR4SYWnfck17x8fhkSurb.jpg" alt="work" class="h-48 w-full object-cover transition duration-300 hover:scale-105">
+                    <h2 class="text-xl font-bold mt-2 ml-3">Login UI Project</h2>
+                    <p class="text-gray-500 mt-2 ml-3 text-sm">
+                        Modern login card design using HTML and Tailwind CSS with responsive layout.</p>
+
+                    <!-- Buttons -->
+                    <div class="mt-4 flex gap-2 ml-3 mb-3">
+                        <a href="https://github.com/Davin-ldn/Card-login"
+                        target="_blank"
+                        class="bg-gray-900 text-white px-2 py-1 text-xs rounded-md hover:bg-gray-600 hover:scale-110 transition-all">
+                            GitHub</a>
+                        <a href="https://github.com/Davin-ldn/Card-login"
+                        class="bg-yellow-500 text-white px-2 py-1 text-xs rounded-md hover:bg-yellow-600 hover:scale-110 transition-all">
+                            Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Skills Section -->
+        <section id="skills" class="ml-10 mt-30">
+            <div class="flex flex-col mb-6">
+                <h2 class="text-4xl font-bold text-gray-900 mt-2">
+                    My Skills</h2>
+                    <p class="text-gray-500 text-sm mt-30">
+                        Technologies and tools I work with</p>
+                </div>
+            </div>
+<!--Tech Stack-->
+
+            <!-- Skills -->
+            <article class="p-5 grid grid-cols-[80px_1fr] items-start gap-4">
+                <p class="font-semibold text-lg text-gray-700">
+                    Skills
+                </p>
+                <ul class="flex flex-wrap gap-3">
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        HTML
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        CSS
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        Tailwind
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        Animation
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        Responsive
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        C++ & C#
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Tools -->
+            <article class="p-5 grid grid-cols-[80px_1fr] items-start gap-4">
+                <p class="font-semibold text-lg text-gray-700">
+                    Tools
+                </p>
+                <ul class="flex flex-wrap  gap-3">
+
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        Visual Studio Code
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        Visual Studio
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        Git & GitHub
+                    </li>
+                    <li class="px-3 py-1 text-sm border border-yellow-400 rounded-md shadow text-center hover:bg-yellow-200 hover:scale-105 transition">
+                        Dev-C++
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!--Contact-->
+        <section id="contact" class="ml-10 mt-10">
+
+        <!-- Title -->
+        <div class="flex flex-col mb-6">
+            <p class="text-xl font-bold text-yellow-400">
+                Let's Connect
+            </p>
+            <p class="text-4xl font-bold text-gray-700 mt-2">
+                Let's work together.
+            </p>
+        </div>
+
+        <!-- Contact -->
+        <section class="px-1 py-3">
+            <div class="flex justify-between items-start gap-5">
+                <!-- LEFT SIDE -->
+                <div class="w-full max-w-lg flex flex-col gap-5 -mt-8">
+                    <p class="text-gray-600 text-sm leading-6">
+                        If you have any project or idea you would like to work on,
+                        feel free to contact me anytime. I'm always open to new
+                        collaborations and exciting opportunities.
+                    </p>
+                    <!-- Email -->
+                    <a href="mailto:davinlanh157@gmail.com" class="flex items-center gap-5">
+                        <i class="fa-solid fa-envelope text-2xl text-blue-600"></i>
+                        <span class="text-[#1E2A3A] hover:text-yellow-800 hover:underline transition whitespace-nowrap">
+                            davinlanh157@gmail.com</span>
+                    </a>
+
+                    <!-- Location -->
+                    <div class="flex items-center gap-5">
+                        <i class="fa-solid fa-location-dot text-2xl text-blue-600"></i>
+                        <span class="text-[#1E2A3A] whitespace-nowrap">Phnom Penh, Cambodia</span>
+                    </div>
+
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/1H5EJJwuqB/?mibextid=wwXIfr"
+                        class="flex items-center gap-5">
+                        <i class="fa-brands fa-facebook text-2xl text-blue-600"></i>
+                        <span class="text-[#1E2A3A] hover:text-yellow-800 hover:underline transition whitespace-nowrap">Da Vin</span>
+                    </a>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="w-full max-w-sm p-4 border rounded-xl shadow -mt-24">
+
+                    <form>
+                        <h1 class="text-xl font-bold text-center mb-5">
+                            Send Email</h1>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label class="block text-sm font-semibold mb-1">Name</label>
+                            <input type="text" placeholder="Davin Lanh"
+                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+
+                            <label class="block text-sm font-semibold mb-1">
+                                Email
+                            </label>
+
+                            <input type="email"
+                                placeholder="example@gmail.com"
+                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
+
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="mb-3">
+
+                            <label class="block text-sm font-semibold mb-1">
+                                Subject
+                            </label>
+
+                            <input type="text"
+                                placeholder="Tell me your demand..."
+                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
+
+                        </div>
+
+                        <!-- Message -->
+                        <div class="mb-4">
+
+                            <label class="block text-sm font-semibold mb-1">
+                                Message
+                            </label>
+
+                            <textarea rows="4"
+                                placeholder="Tell me about your project..."
+                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2"></textarea>
+
+                        </div>
+
+                        <!-- Button -->
+                        <button type="submit"
+                            class="w-full bg-yellow-400 py-2 rounded-lg text-sm font-semibold hover:bg-yellow-300 transition">
+
+                            Send
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+    <!--Footer-->
+    <footer class="bg-blue-300 w-full flex justify-between fixed button-0 right-0 left-0 "><!--fixed button-0 right-0 left-0--> 
+        <p>Portfolio Version2 by Davin</p>
+        <p>Follow me</p>
+    </footer>
+</body>
+</html>
+                 
