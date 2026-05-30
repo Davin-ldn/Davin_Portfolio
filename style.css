@@ -36,10 +36,7 @@
 
   /* Titles */
   #work h2,
-  #skills h2{
-    font-size: 2rem !important;
-  }
-
+  #skills h2,
   #contact .text-3xl{
     font-size: 2rem !important;
   }
@@ -47,25 +44,26 @@
   /* Work Cards */
   #work .w-80,
   #work .max-w-sm{
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 48% !important;
+    min-width: 280px;
   }
 
-  /* Skills & Tools */
+  /* Skills */
   #skills article{
-    display: flex !important;
-    flex-direction: column !important;
     gap: 12px !important;
   }
 
-  /* Contact */
+  /* Contact - រក្សាដូច Laptop */
   #contact .flex.justify-between{
-    flex-direction: column !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
     gap: 2rem !important;
+    flex-wrap: wrap !important;
   }
 
   #contact form{
-    width: 100%;
+    width: 50% !important;
+    min-width: 280px;
   }
 
   /* Email & Location */
@@ -93,7 +91,8 @@
     gap: 2rem !important;
   }
 
-  #work .w-80{
+  #work .w-80,
+  #work .max-w-sm{
     width: 45% !important;
   }
 }
