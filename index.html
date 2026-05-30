@@ -8,18 +8,22 @@
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/44/44386.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Portflio</title>
 </head>
-<body class="h-[200vh]">
+
+<body class="min-h-screen">
+
     <!-- Navigation -->
-    <header class="fixed top-0 left-0 right-0 bg-[#F6E7C1] flex justify-between items-center py-4 px-8 shadow-md z-50">
-        <div class="font-serif font-bold text-xl hover:text-yellow-800 transition">Lanh Davin</div>
+    <header class="fixed top-0 left-0 right-0 bg-[#F6E7C1] flex flex-col md:flex-row justify-between items-center py-3 px-4 md:px-24 shadow-md z-50 gap-3">
+        <div class="font-serif font-bold text-xl hover:text-yellow-800 transition ">Lanh Davin</div>
 
         <!-- Navigation Links -->
-        <nav class="flex gap-8 font-serif font-bold text-sm">
-            <a href="#work" class="text-[#1E2A3A] hover:text-yellow-600 hover:underline transition cursor-pointer">Work</a>
-            <a href="#skills" class="text-[#1E2A3A] hover:text-yellow-600 hover:underline transition cursor-pointer">Skills</a>
-            <a href="#contact" class="text-[#1E2A3A] hover:text-yellow-600 hover:underline transition cursor-pointer">Contact</a>
+        <nav class="flex flex-wrap justify-center gap-4 md:gap-8 font-serif font-bold text-xs max-w-6xl mx-auto">
+            <a href="#work" class="text-[#1E2A3A] hover:text-yellow-600  hover:underline transition cursor-pointer">Work</a>
+            <a href="#skills" class="text-[#1E2A3A] hover:text-yellow-600  hover:underline transition cursor-pointer">Skills</a>
+            <a href="#contact" class="text-[#1E2A3A] hover:text-yellow-600 transition cursor-pointer">Contact</a>
         </nav>
 
         <!-- Hire Button -->
@@ -33,17 +37,17 @@
     </header>
 
     <!-- Main Content -->
-    <main class="pt-24">
+    <main class="pt-36 md:pt-24">
 
-    <!-- Hero Section -->
-        <section class="h-screen flex flex-col justify-center items-center gap-4 text-center">
-            <h1 class="font-serif font-bold">
-                <span class="text-gray-600 text-3xl block">Build Your Future with</span>
-                <span class="text-yellow-400 text-5xl block mt-2">Web Development</span>
+        <!-- Hero Section -->
+        <section class="min-h-screen flex flex-col justify-center items-center gap-4 text-center px-4" data-aos="fade-up">
+            <h1 class="font-serif font-bold" data-aos="zoom-in">
+                <span class="text-slate-800 text-2xl md:text-3xl block">Build Your Future with</span>
+                <span class="text-yellow-400 text-4xl md:text-6xl block mt-2">Web Development</span>
             </h1>
 
-    <!-- Buttons -->
-            <div class="flex gap-2 mt-4">
+            <!-- Buttons -->
+            <div class="flex gap-2 mt-4" data-aos="fade-up" data-aos-delay="200">
                 <a href="#work">
                     <button class="bg-yellow-300 px-3 py-2 font-serif font-bold text-sm cursor-pointer hover:scale-110 transition-all focus:ring-1 rounded-full">
                         View My Work
@@ -54,28 +58,28 @@
                         Let's Connect
                     </button>
                 </a>
-                
             </div>
         </section>
 
-    <!-- Work Section -->
-        <section id="work" class="ml-10 mt-30">
+        <!-- Work Section -->
+        <section id="work" class="px-6 md:px-10 mt-2" data-aos="fade-up">
             <div class="flex flex-col mb-6">
-                <h2 class="text-4xl font-bold text-gray-900 mt-2">
-                    My Work </h2>
-                    <p class="text-gray-500 text-sm mt-30">
-                        A collection of projects showcasing my experience in modern web development.</p>
-                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+                    My Work</h2>
+                <p class="text-gray-500 text-sm mt-3">
+                    A collection of projects showcasing my experience in modern web development.
+                </p>
             </div>
-<!-- Cards Container -->
+
+            <!-- Cards Container -->
             <div class="flex flex-wrap justify-center gap-10">
 
-        <!-- Work Card 1-->
-                <div class="bg-yellow-200 rounded-xl shadow-lg overflow-hidden w-80 mb-10">
+                <!-- Work Card 1-->
+                <div class="bg-yellow-200 rounded-xl shadow-lg overflow-hidden w-full max-w-sm mb-10" data-aos="zoom-in">
 
                     <img src="https://www.nicepng.com/png/detail/138-1380253_work-in-progress-icon-png-person-computer-icon.png"
                         alt="work"
-                        class="h-48 w-full object-cover transition duration-300 hover:scale-105">
+                        class="h-48 w-full max-w-sm object-cover transition duration-300 hover:scale-105">
 
                     <h2 class="text-xl font-bold mt-2 ml-3">My Portfolio</h2>
 
@@ -100,16 +104,17 @@
                     </div>
                 </div>
 
-    <!-- Card Work 2-->
-                <div class="bg-yellow-200 rounded-xl shadow-lg overflow-hidden  w-80 mb-10 ml-10">
+                <!-- Card Work 2-->
+                <div class="bg-yellow-200 rounded-xl shadow-lg overflow-hidden  w-full max-w-sm mb-10 " data-aos="zoom-in" data-aos-delay="150">
                     <img src="https://t4.ftcdn.net/jpg/18/66/82/87/360_F_1866828741_78cv8Aoa1ZYOR4SYWnfck17x8fhkSurb.jpg" alt="work" class="h-48 w-full object-cover transition duration-300 hover:scale-105">
                     <h2 class="text-xl font-bold mt-2 ml-3">Login UI Project</h2>
                     <p class="text-gray-500 mt-2 ml-3 text-sm">
-                        Modern login card design using HTML and Tailwind CSS with responsive layout.</p>
+                        Modern login card design using HTML and Tailwind CSS with responsive layout.
+                    </p>
 
                     <!-- Buttons -->
                     <div class="mt-4 flex gap-2 ml-3 mb-3">
-                        <a href="https://github.com/Davin-ldn/Card-login"
+                        <a href="https://github.com/Davin-ldn"
                         target="_blank"
                         class="bg-gray-900 text-white px-2 py-1 text-xs rounded-md hover:bg-gray-600 hover:scale-110 transition-all">
                             GitHub</a>
@@ -120,19 +125,20 @@
                 </div>
             </div>
         </section>
-    <!-- Skills Section -->
-        <section id="skills" class="ml-10 mt-30">
+
+        <!-- Skills Section -->
+        <section id="skills" class="px-4 md:px-10 mt-3" data-aos="fade-up">
             <div class="flex flex-col mb-6">
-                <h2 class="text-4xl font-bold text-gray-900 mt-2">
-                    My Skills</h2>
-                    <p class="text-gray-500 text-sm mt-30">
-                        Technologies and tools I work with</p>
-                </div>
+                <h2 class="text-4xl font-bold text-gray-900 mt-2">My Skills</h2>
+                <p class="text-gray-500 text-sm mt-3">
+                    Technologies and tools I work with
+                </p>
             </div>
-<!--Tech Stack-->
+
+            <!--Tech Stack-->
 
             <!-- Skills -->
-            <article class="p-5 grid grid-cols-[80px_1fr] items-start gap-4">
+            <article class="p-3 md:p-5 flex flex-col md:grid md:grid-cols-[80px_1fr] gap-4">
                 <p class="font-semibold text-lg text-gray-700">
                     Skills
                 </p>
@@ -159,7 +165,7 @@
             </article>
 
             <!-- Tools -->
-            <article class="p-5 grid grid-cols-[80px_1fr] items-start gap-4">
+            <article class="p-5 grid grid-cols-[80px_1fr] items-start gap-4" data-aos="fade-left">
                 <p class="font-semibold text-lg text-gray-700">
                     Tools
                 </p>
@@ -182,122 +188,144 @@
         </section>
 
         <!--Contact-->
-        <section id="contact" class="ml-10 mt-10">
+        <section id="contact" class="px-4 md:px-10 mt-10" data-aos="fade-up">
 
-        <!-- Title -->
+                <!-- Title -->
         <div class="flex flex-col mb-6">
-            <p class="text-xl font-bold text-yellow-400">
+            <p class="text-xl font-bold text-yellow-400 mt-2">
                 Let's Connect
             </p>
-            <p class="text-4xl font-bold text-gray-700 mt-2">
+            <p class="text-2xl md:text-5xl font-bold text-gray-700 mt-3">
                 Let's work together.
             </p>
+           
+
         </div>
 
-        <!-- Contact -->
-        <section class="px-1 py-3">
-            <div class="flex justify-between items-start gap-5">
-                <!-- LEFT SIDE -->
-                <div class="w-full max-w-lg flex flex-col gap-5 -mt-8">
-                    <p class="text-gray-600 text-sm leading-6">
-                        If you have any project or idea you would like to work on,
-                        feel free to contact me anytime. I'm always open to new
-                        collaborations and exciting opportunities.
-                    </p>
-                    <!-- Email -->
-                    <a href="mailto:davinlanh157@gmail.com" class="flex items-center gap-5">
-                        <i class="fa-solid fa-envelope text-2xl text-blue-600"></i>
-                        <span class="text-[#1E2A3A] hover:text-yellow-800 hover:underline transition whitespace-nowrap">
-                            davinlanh157@gmail.com</span>
-                    </a>
+            <!-- Contact -->
+            <section class="px-1 py-3">
+                <div class="flex flex-col md:flex-row justify-between items-start gap-10">
 
-                    <!-- Location -->
-                    <div class="flex items-center gap-5">
-                        <i class="fa-solid fa-location-dot text-2xl text-blue-600"></i>
-                        <span class="text-[#1E2A3A] whitespace-nowrap">Phnom Penh, Cambodia</span>
-                    </div>
-
-                    <!-- Facebook -->
-                    <a href="https://www.facebook.com/share/1H5EJJwuqB/?mibextid=wwXIfr"
-                        class="flex items-center gap-5">
-                        <i class="fa-brands fa-facebook text-2xl text-blue-600"></i>
-                        <span class="text-[#1E2A3A] hover:text-yellow-800 hover:underline transition whitespace-nowrap">Da Vin</span>
-                    </a>
-                </div>
-
-                <!-- RIGHT SIDE -->
-                <div class="w-full max-w-sm p-4 border rounded-xl shadow -mt-24">
-
-                    <form>
-                        <h1 class="text-xl font-bold text-center mb-5">
-                            Send Email</h1>
-
-                        <!-- Name -->
-                        <div class="mb-3">
-                            <label class="block text-sm font-semibold mb-1">Name</label>
-                            <input type="text" placeholder="Davin Lanh"
-                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
-                        </div>
+                    <!-- LEFT SIDE -->
+                    <div class="w-full max-w-lg flex flex-col gap-5 mt-2 leading-relaxed -mt-5" data-aos="fade-right">
+                        <p class="text-gray-600 text-sm leading-6">
+                            If you have any project or idea you would like to work on,
+                            feel free to contact me anytime. I'm always open to new
+                            collaborations and exciting opportunities.
+                        </p>
 
                         <!-- Email -->
-                        <div class="mb-3">
+                        <a href="mailto:davinlanh157@gmail.com" class="flex items-center gap-5">
+                            <i class="fa-solid fa-envelope text-xl text-blue-600"></i>
+                            <span class="text-[#1E2A3A] font-semibold hover:text-yellow-800 hover:underline transition ">
+                                davinlanh157@gmail.com</span>
+                        </a>
 
-                            <label class="block text-sm font-semibold mb-1">
-                                Email
-                            </label>
-
-                            <input type="email"
-                                placeholder="example@gmail.com"
-                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
-
+                        <!-- Location -->
+                        <div class="flex items-center gap-6 -mt-4">
+                            <i class="fa-solid fa-location-dot text-xl text-blue-600"></i>
+                            <span class="text-[#1E2A3A] font-semibold ">Phnom Penh, Cambodia</span>
                         </div>
 
-                        <!-- Subject -->
-                        <div class="mb-3">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/share/1H5EJJwuqB/?mibextid=wwXIfr"
+                            class="flex items-center gap-5 -mt-4">
+                            <i class="fa-brands fa-facebook text-xl text-blue-600"></i>
+                            <span class="text-[#1E2A3A] font-semibold hover:text-yellow-800 hover:underline transition ">Da Vin</span>
+                        </a>
+                    </div>
 
-                            <label class="block text-sm font-semibold mb-1">
-                                Subject
-                            </label>
+                    <!-- RIGHT SIDE -->
+                    <div class="w-full max-w-sm p-4 border rounded-xl shadow" data-aos="fade-left">
 
-                            <input type="text"
-                                placeholder="Tell me your demand..."
-                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
+                        <form>
+                            <h1 class="text-xl font-bold text-center mb-5">
+                                Send Email</h1>
 
-                        </div>
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <label class="block text-sm font-semibold mb-1">Name</label>
+                                <input type="text" placeholder="Davin Lanh"
+                                    class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
+                            </div>
 
-                        <!-- Message -->
-                        <div class="mb-4">
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label class="block text-sm font-semibold mb-1">
+                                    Email
+                                </label>
 
-                            <label class="block text-sm font-semibold mb-1">
-                                Message
-                            </label>
+                                <input type="email"
+                                    placeholder="example@gmail.com"
+                                    class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
 
-                            <textarea rows="4"
-                                placeholder="Tell me about your project..."
-                                class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2"></textarea>
+                            </div>
 
-                        </div>
+                            <!-- Subject -->
+                            <div class="mb-3">
+                                <label class="block text-sm font-semibold mb-1">
+                                    Subject
+                                </label>
+                                <input type="text"
+                                    placeholder="Tell me your demand..."
+                                    class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2">
+                            </div>
 
-                        <!-- Button -->
-                        <button type="submit"
-                            class="w-full bg-yellow-400 py-2 rounded-lg text-sm font-semibold hover:bg-yellow-300 transition">
+                            <!-- Message -->
+                            <div class="mb-4">
 
-                            Send
+                                <label class="block text-sm font-semibold mb-1">
+                                    Message
+                                </label>
 
-                        </button>
+                                <textarea rows="4"
+                                    placeholder="Tell me about your project..."
+                                    class="w-full px-3 py-2 text-sm border rounded-lg focus:outline-none focus:ring-2"></textarea>
 
-                    </form>
+                            </div>
 
+                            <!-- Button -->
+                            <button type="submit"
+                                class="w-full bg-yellow-400 py-2 rounded-lg text-sm font-semibold hover:bg-yellow-300 transition">
+                                Send
+                            </button>
+                        </form>
+                    </div>
                 </div>
+            </section>
 
+        <!--Footer-->
+
+        <footer class="flex flex-col md:flex-row justify-between items-center gap-4 p-5 text-center">
+
+            <p class="font-serif font-semibold text-yellow-400">
+                Lanh Davin
+            </p>
+
+            <p class="font-serif">
+                Built your website with me!
+            </p>
+
+            <div class="flex gap-4 text-xl">
+                <a href="https://github.com/Davin-ldn" target="_blank">
+                    <i class="fa-brands fa-github cursor-pointer"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/davin-lanh-899a543a1" target="_blank">
+                    <i class="fa-brands fa-linkedin cursor-pointer"></i>
+                </a>
             </div>
+        </footer>
+    </section>
 
-        </section>
-    <!--Footer-->
-    <footer class="bg-blue-300 w-full flex justify-between fixed button-0 right-0 left-0 "><!--fixed button-0 right-0 left-0--> 
-        <p>Portfolio Version2 by Davin</p>
-        <p>Follow me</p>
-    </footer>
+    </main>
+
+    <!-- AOS INIT -->
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
 </body>
 </html>
-                 
